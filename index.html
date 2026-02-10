@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bosque / No Bosque IDEAM</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="mapa.css">
+</head>
+
+<body>
+
+<header>
+  <h2>Monitoreo Bosque / No Bosque - IDEAM</h2>
+</header>
+
+<div id="contenedor">
+  <div id="map"></div>
+
+  <div id="panel">
+    <label>Seleccionar año</label>
+    <select id="selectorAnio">
+      <option value="10">2018</option>
+      <option value="11">2019</option>
+      <option value="12" selected>2020</option>
+      <option value="13">2021</option>
+    </select>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="mapa.js"></script>
+
+</body>
+</html>
