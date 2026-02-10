@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoJSON por año con slider</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="container">
+
+    <!-- Panel izquierdo: Mapa -->
+    <div id="left-panel">
+        <div id="map"></div>
+        <div id="bottom-panel">
+            <p id="description">Descripción o áreas seleccionadas aquí...</p>
+        </div>
+    </div>
+
+    <!-- Panel derecho: Leyenda / convenciones -->
+    <div id="right-panel">
+        <h3>Leyenda / Convenciones</h3>
+        <ul>
+            <li><span class="legend-color" style="background:red"></span> 2012 - España</li>
+            <li><span class="legend-color" style="background:blue"></span> 2013 - Francia</li>
+        </ul>
+        <div id="button-container">
+            <button id="action-button">Acción</button>
+        </div>
+    </div>
+</div>
+
+<!-- Controles encima del mapa -->
+<div id="controls">
+    Año seleccionado:
+    <strong><span id="yearLabel">2012</span></strong>
+    <br>
+    <input type="range" id="yearSlider" min="2012" max="2013" step="1" value="2012">
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

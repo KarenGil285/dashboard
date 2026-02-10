@@ -1,0 +1,75 @@
+/* Contenedor principal */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    height: 90vh; /* Deja 10% para el slider/control si quieres */
+}
+
+/* Panel izquierdo: mapa + zona inferior */
+#left-panel {
+    flex: 3; /* Ocupa 75% del ancho aprox */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Mapa */
+#map {
+    flex: 1; /* ocupa el espacio superior */
+}
+
+/* Panel inferior dentro del mapa */
+#bottom-panel {
+    height: 80px;
+    background: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Panel derecho: leyenda y botón */
+#right-panel {
+    flex: 1; /* ocupa 25% aprox */
+    background: #eeeeee;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Leyenda */
+.legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Botón al final */
+#button-container {
+    text-align: right;
+}
+
+#action-button {
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#action-button:hover {
+    background: #0056b3;
+}
+
+/* Controles encima del mapa */
+#controls {
+    padding: 10px;
+    background: #dddddd;
+}
