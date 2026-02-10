@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#contenedor {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+#panel {
+  width: 220px;
+  background: white;
+  padding: 15px;
+  box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+}
